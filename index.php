@@ -17,7 +17,7 @@ mysqli_close($connection);
     <table width="100%" height="100%">
         <tr>
             <td align="center">
-                <a href="makedeal.php"><image src="apple-discount.png" /></a>
+                <a href="makedeal.php"><image src="B1G1.png" /></a>
                 <font size="16" color="#FF0000"><br>我们所有的商品都可享受买一送一！<br>如果你喜欢，<a href="makedeal.php">就快来剁手吧</a></font>
             </td>
         </tr>
