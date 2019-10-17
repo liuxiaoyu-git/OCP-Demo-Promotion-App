@@ -13,12 +13,14 @@ $rs = $connection->query($sql);
     <table width="100%" height="100%">
         <tr>
             <td align="center">
-<?php
-while ($row = mysqli_fetch_assoc($rs)) {
-    echo "应用版本: ".$row['AppVersion'] . " 购买率: " . $row['BuyRate'] . "<br>";
-}
-mysqli_close($connection);
-?>
+                <font size="26" color="#FF0000">
+                    <?php
+                    while ($row = mysqli_fetch_assoc($rs)) {
+                        echo "用户使用的应用版本: ".$row['AppVersion']  "  用户购买率: " . $row['BuyRate']  "<br>";
+                    }
+                    mysqli_close($connection);
+                    ?>
+                </font>
             </td>
         </tr>
     </table>
