@@ -20,7 +20,8 @@ mysqli_close($connection);
     <table width="100%" height="100%">
         <tr>
             <td align="center">
-                <font size="16" color="#FF0000">我们所有的商品都可享受50%的折扣！<br>如果你喜欢，<a href="makedeal.php">就快来剁手吧</a></font>
+                <a href="makedeal.php"><image src="apple-discount.png" /></a>
+                <font size="16" color="#FF0000"><br>我们所有的商品都可享受50%的折扣！<br>如果你喜欢，<a href="makedeal.php">就快来剁手吧</a></font>
             </td>
         </tr>
     </table>
