@@ -6,7 +6,7 @@ $dbname = getenv("DATABASE_NAME");
 $dbpwd = getenv("DATABASE_PASSWORD");
 $connection = mysqli_connect($dbhost.":".$dbport, $dbuser, $dbpwd, $dbname) or die("Error " . mysqli_error($connection));
 $sql = "select AppVersion,COUNT(case when Step='buy' then 1 end)/COUNT(case when Step='look' then 1 end) as BuyRate from AB group by AppVersion";
-$rs = $connection->query($query);
+$rs = $connection->query($sql);
 ?>
 <html>
 <div id="box">
