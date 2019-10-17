@@ -5,7 +5,7 @@ $dbuser = getenv("DATABASE_USER");
 $dbname = getenv("DATABASE_NAME");
 $dbpwd = getenv("DATABASE_PASSWORD");
 $connection = mysqli_connect($dbhost.":".$dbport, $dbuser, $dbpwd, $dbname) or die("Error " . mysqli_error($connection));
-$sql = "insert into AB values('buyonegetonefree','buy')";
+$sql = "insert into AB values('buy1get1','buy')";
 if ($connection->query($sql) !== TRUE) {  
     echo "发生数据库操作错误";  
 } 
