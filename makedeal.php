@@ -17,6 +17,7 @@ mysqli_close($connection);
     <table width="100%" height="100%">
         <tr>
             <td align="center">
+                <image src="discount.png" /><br>
                 <font size="16" color="#FF0000">谢谢你喜欢50%的折扣促销方案！ </font>
             </td>
         </tr>
