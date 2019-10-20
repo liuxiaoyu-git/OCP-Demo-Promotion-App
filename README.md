@@ -14,15 +14,15 @@ insert into AB values("buy1get1","buy");
 
 4)创建三个应用和相关route<br>
 打折促销应用<br>
-oc new-app https://github.com/liuxiaoyu-git/OCP-Demo-AB-App#discount --name=discount --env MYSQL_SERVICE_HOST=mysql.promotion.svc MYSQL_SERVICE_PORT=3306 DATABASE_NAME=demo DATABASE_USER=openshift DATABASE_PASSWORD=password
+oc new-app https://github.com/liuxiaoyu-git/OCP-Demo-Promotion-App#discount --name=discount --env MYSQL_SERVICE_HOST=mysql.promotion.svc MYSQL_SERVICE_PORT=3306 DATABASE_NAME=demo DATABASE_USER=openshift DATABASE_PASSWORD=password
 
 买一送一促销应用<br>
-oc new-app https://github.com/liuxiaoyu-git/OCP-Demo-AB-App#buy1get1free --name=buy1get1free --env MYSQL_SERVICE_HOST=mysql.promotion.svc MYSQL_SERVICE_PORT=3306 DATABASE_NAME=demo DATABASE_USER=openshift DATABASE_PASSWORD=password
+oc new-app https://github.com/liuxiaoyu-git/OCP-Demo-Promotion-App#buy1get1free --name=buy1get1free --env MYSQL_SERVICE_HOST=mysql.promotion.svc MYSQL_SERVICE_PORT=3306 DATABASE_NAME=demo DATABASE_USER=openshift DATABASE_PASSWORD=password
 
 oc expose svc discount --name=promotion<br>
 oc set route-backends promotion discount=1 buy1get1free=1
 
 统计应用<br>
-oc new-app https://github.com/liuxiaoyu-git/OCP-Demo-AB-App#statistic --name=statistic --env MYSQL_SERVICE_HOST=mysql.promotion.svc MYSQL_SERVICE_PORT=3306 DATABASE_NAME=demo DATABASE_USER=openshift DATABASE_PASSWORD=password
+oc new-app https://github.com/liuxiaoyu-git/OCP-Demo-Promotion-App#statistic --name=statistic --env MYSQL_SERVICE_HOST=mysql.promotion.svc MYSQL_SERVICE_PORT=3306 DATABASE_NAME=demo DATABASE_USER=openshift DATABASE_PASSWORD=password
 
 oc expose svc statistic
