@@ -18,7 +18,7 @@ mysqli_close($connection);
         <tr>
             <td align="center">
                 <a href="makedeal.php"><image src="B1G1.png" /></a>
-                <font size="16" color="#FF0000"><br>买iPhoneX送iWatch！<br>如果你喜欢，<a href="makedeal.php">就快来剁手吧</a></font>
+                <font size="16" color="#FF0000"><br>买iPhoneX送手机壳！<br>如果你喜欢，<a href="makedeal.php">就快来剁手吧</a></font>
             </td>
         </tr>
     </table>
