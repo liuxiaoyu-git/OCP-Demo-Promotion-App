@@ -13,10 +13,10 @@ $rs = $connection->query($sql);
     <table width="100%" height="100%">
         <tr>
             <td align="center">
-                <font size="6" color="#FF0000">
+                <font color="#FF0000">
                     <?php
                     while ($row = mysqli_fetch_assoc($rs)) {
-                        echo "享有". $row['AppVersion']. "优惠的用户购买率: ". $row['BuyRate']. "<br>";
+                        echo $row['AppVersion']. "促销方案的用户购买率: ". $row['BuyRate']. "<br>";
                     }
                     mysqli_close($connection);
                     ?>
